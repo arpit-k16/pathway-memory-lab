@@ -29,8 +29,7 @@ _BDH_RESPONSE = BDHResponse(
             name="BDH",
             type="research_reference",
             role=(
-                "Reference topic only. Exact architecture details are pending "
-                "source verification."
+                "Primary-source context: a scale-free, locally interacting neuron-particle architecture; its inference-time working memory relies on synaptic plasticity."
             ),
             relation_to_topic=(
                 "Used as external context for learners studying recurrent "
@@ -38,15 +37,14 @@ _BDH_RESPONSE = BDHResponse(
             ),
             not_implemented_by_toy_engine=True,
             sources=[
-                "TODO: verify primary BDH paper reference before final submission",
+                "arXiv:2509.26507 — https://arxiv.org/abs/2509.26507",
             ],
         ),
         BDHEntry(
             name="BDH-CQ",
             type="research_reference",
             role=(
-                "Reference topic only. Exact architecture details are pending "
-                "source verification."
+                "Primary-source context: inputs update recurrent memory and a query is solved through iterative high-dimensional latent computation."
             ),
             relation_to_topic=(
                 "Used as external context for learners studying recurrent "
@@ -54,7 +52,7 @@ _BDH_RESPONSE = BDHResponse(
             ),
             not_implemented_by_toy_engine=True,
             sources=[
-                "TODO: verify primary BDH-CQ paper reference before final submission",
+                "arXiv:2608.09888 — https://arxiv.org/abs/2608.09888",
             ],
         ),
     ],

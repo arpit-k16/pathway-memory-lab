@@ -1,0 +1,11 @@
+import { apiFetch } from './client';
+import type { ApiPreset, BdhResponse, ExperimentRequest, ExperimentResponse, ResearchSource, SweepResponse } from '../types/experiment';
+export const health = () => apiFetch<{status:string;service:string;version:string}>('/health');
+export const getConcept = () => apiFetch<unknown>('/api/v1/concept');
+export const getPresets = () => apiFetch<ApiPreset[]>('/api/v1/presets');
+export const runExperiment = (request:ExperimentRequest) => apiFetch<ExperimentResponse>('/api/v1/experiments',{method:'POST',body:JSON.stringify(request)});
+export const getExperiment = (id:string) => apiFetch<ExperimentResponse>(`/api/v1/experiments/${encodeURIComponent(id)}`);
+export const runPreset = (name:string) => apiFetch<ExperimentResponse>(`/api/v1/experiments/preset/${encodeURIComponent(name)}`,{method:'POST'});
+export const runSweep = (request:object) => apiFetch<SweepResponse>('/api/v1/experiments/sweep',{method:'POST',body:JSON.stringify(request)});
+export const getBDH = () => apiFetch<BdhResponse>('/api/v1/bdh');
+export const getResearch = () => apiFetch<ResearchSource[]>('/api/v1/research');

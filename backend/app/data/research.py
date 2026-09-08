@@ -11,44 +11,15 @@ from ..schemas import ResearchSource
 router = APIRouter(tags=["research"])
 
 _SOURCES: list[ResearchSource] = [
+    ResearchSource(title="The Dragon Hatchling: The Missing Link between the Transformer and Models of the Brain", authors=["Adrian Kosowski", "Przemysław Uznański", "Jan Chorowski", "Zuzanna Stamirowska", "Michał Bartoszkiewicz"], year=2025, identifier="arXiv:2509.26507", url="https://arxiv.org/abs/2509.26507", source_type="primary_source", claim_supported="BDH is a recurrent language-model architecture whose inference-time working memory relies on synaptic plasticity.", notes="Primary source; used here only for conceptual context, not as a benchmark reproduced by this toy."),
     ResearchSource(
-        title="TODO: verify primary paper on recurrent language models",
-        authors=[],
-        year=None,
-        identifier=None,
-        url=None,
-        source_type="primary_paper",
-        claim_supported=(
-            "Fixed-size recurrent states can carry information across "
-            "long sequences but face capacity limits."
-        ),
-        notes="TODO: verify primary source before final submission.",
+        title="BDH-CQ: In-Context Learning with Recurrent Latent Reasoning", authors=["Björn Engdahl", "Adrian Kosowski", "Jan Chorowski", "Zuzanna Stamirowska", "Przemysław Uznański", "Junlin Jiang", "Rohan Phadke", "Remigiusz Kinas", "Richard Zhong"], year=2026, identifier="arXiv:2608.09888", url="https://arxiv.org/abs/2608.09888", source_type="primary_source", claim_supported="BDH-CQ describes inference-time inputs updating recurrent memory followed by iterative latent computation for a query.", notes="Primary source; substantially beyond this toy engine's scalar-slot update and readout.",
     ),
     ResearchSource(
-        title="TODO: verify primary paper on recall/memory trade-offs in linear attention",
-        authors=[],
-        year=None,
-        identifier=None,
-        url=None,
-        source_type="primary_paper",
-        claim_supported=(
-            "As sequence length increases relative to state size, "
-            "recall quality degrades due to representational interference."
-        ),
-        notes="TODO: verify primary source before final submission.",
+        title="Titans: Learning to Memorize at Test Time", authors=["Ali Behrouz", "Peilin Zhong", "Vahab Mirrokni"], year=2025, identifier="arXiv:2501.00663", url="https://arxiv.org/abs/2501.00663", source_type="primary_source", claim_supported="A recent primary source contrasting recurrent hidden-state compression, attention, and learned long-term memory.", notes="Contextual comparison only; no Titans result is generated or claimed by Memory Lab.",
     ),
     ResearchSource(
-        title="TODO: verify BDH / Dragon Hatchling primary paper",
-        authors=[],
-        year=None,
-        identifier=None,
-        url=None,
-        source_type="primary_paper",
-        claim_supported=(
-            "Recurrent architectures with fixed-size latent states can "
-            "approach transformer-level performance on certain tasks."
-        ),
-        notes="TODO: verify primary source before final submission.",
+        title="Griffin: Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models", authors=["Soham De et al."], year=2024, identifier="arXiv:2402.19427", url="https://arxiv.org/abs/2402.19427", source_type="primary_source", claim_supported="A primary source on mixing gated linear recurrences with local attention for efficient language modeling.", notes="Contextual comparison only; this toy is not Griffin or a reproduction of its results.",
     ),
 ]
 

@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     VERSION: str = "0.1.0"
     SERVICE_NAME: str = "memory-lab-backend"
     CORS_ORIGINS: list[str] = Field(
-        default_factory=lambda: ["http://localhost:3000", "http://localhost:5173"]
+        default_factory=lambda: ["http://localhost:3000", "http://localhost:5173", "http://127.0.0.1:5173"]
     )
 
     MAX_SEQUENCE_LENGTH: int = 500
