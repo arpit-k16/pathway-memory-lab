@@ -678,25 +678,7 @@ Third-party dependencies retain their respective licenses. The project does **no
 
 ---
 
-## 24. AI Assistance Disclosure
-
-AI assistance was used during the development workflow for:
-
-- project ideation and refinement;
-- code implementation assistance;
-- debugging;
-- frontend/backend integration;
-- documentation;
-- research organization;
-- copy editing and presentation refinement.
-
-The final artifact was reviewed as an integrated project. The computational mechanism is explicitly documented, and research claims are tied to cited primary sources.
-
-AI assistance should not be interpreted as independent scientific validation of the toy experiment or of the cited research.
-
----
-
-## 25. Submission Materials
+## 24. Submission Materials
 
 The project package provides:
 
@@ -713,7 +695,7 @@ The project package provides:
 
 ---
 
-## 26. Learning Journey
+## 25. Learning Journey
 
 ```text
 Question
