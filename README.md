@@ -1,4 +1,4 @@
-# DataForge Memory Lab
+#Pathway Memory Lab
 
 > **Pathway Project — Explain the Frontier**  
 > **Topic:** In-Context Learning with Recurrent Memory
